@@ -1,90 +1,71 @@
-(function(){
+function initSearch() {
+  const searchInput = document.querySelector(".search-input");
+  const searchButton = document.querySelector(".search-button");
 
-	'use strict'
+  if (searchInput && searchButton) {
+    searchButton.addEventListener("click", function () {
+      const searchTerm = searchInput.value.trim();
+      if (searchTerm) {
+        performSearch(searchTerm);
+      }
+    });
+  }
+}
 
+function initMobileMenu() {
+  const mobileMenuToggle = document.querySelector(".navbar-toggler");
+  const mobileMenu = document.querySelector("#mobileMenu");
 
-	var siteMenuClone = function() {
-		var jsCloneNavs = document.querySelectorAll('.js-clone-nav');
-		var siteMobileMenuBody = document.querySelector('.site-mobile-menu-body');
-		
+  if (mobileMenuToggle && mobileMenu) {
+    // Initialize offcanvas with proper configuration
+    const offcanvasInstance = new bootstrap.Offcanvas(mobileMenu, {
+      backdrop: true,
+      keyboard: true,
+      scroll: false,
+    });
 
+    // Close mobile menu when clicking on a link
+    const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+    mobileMenuLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        offcanvasInstance.hide();
+      });
+    });
 
-		jsCloneNavs.forEach(nav => {
-			var navCloned = nav.cloneNode(true);
-			navCloned.setAttribute('class', 'site-nav-wrap');
-			siteMobileMenuBody.appendChild(navCloned);
-		});
+    // Handle dropdown toggles within the offcanvas
+    const dropdownToggles = mobileMenu.querySelectorAll(
+      '[data-bs-toggle="dropdown"]'
+    );
+    dropdownToggles.forEach((toggle) => {
+      toggle.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const dropdown = toggle.nextElementSibling;
+        if (dropdown) {
+          dropdown.classList.toggle("show");
+        }
+      });
+    });
+  }
+}
 
-		setTimeout(function(){
+document.addEventListener("DOMContentLoaded", function () {
+  initSearch();
+  initMobileMenu();
+});
 
-			var hasChildrens = document.querySelector('.site-mobile-menu').querySelectorAll(' .has-children');
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".site-header");
+  const secondSection = document.querySelector("#section2");
 
-			var counter = 0;
-			hasChildrens.forEach( hasChild => {
-				
-				var refEl = hasChild.querySelector('a');
+  if (!header || !secondSection) return;
 
-				var newElSpan = document.createElement('span');
-				newElSpan.setAttribute('class', 'arrow-collapse collapsed');
+  const sectionTop = secondSection.offsetTop;
+  const scrollY = window.scrollY;
 
-				// prepend equivalent to jquery
-				hasChild.insertBefore(newElSpan, refEl);
-
-				var arrowCollapse = hasChild.querySelector('.arrow-collapse');
-				arrowCollapse.setAttribute('data-bs-toggle', 'collapse');
-				arrowCollapse.setAttribute('data-bs-target', '#collapseItem' + counter);
-
-				var dropdown = hasChild.querySelector('.dropdown');
-				dropdown.setAttribute('class', 'collapse');
-				dropdown.setAttribute('id', 'collapseItem' + counter);
-
-				counter++;
-			});
-
-		}, 1000);
-
-
-		// Click js-menu-toggle
-
-		var menuToggle = document.querySelectorAll(".js-menu-toggle");
-		var mTog;
-		menuToggle.forEach(mtoggle => {
-			mTog = mtoggle;
-			mtoggle.addEventListener("click", (e) => {
-				if ( document.body.classList.contains('offcanvas-menu') ) {
-					document.body.classList.remove('offcanvas-menu');
-					mtoggle.classList.remove('active');
-					mTog.classList.remove('active');
-				} else {
-					document.body.classList.add('offcanvas-menu');
-					mtoggle.classList.add('active');
-					mTog.classList.add('active');
-				}
-			});
-		})
-
-
-
-		var specifiedElement = document.querySelector(".site-mobile-menu");
-		var mt, mtoggleTemp;
-		document.addEventListener('click', function(event) {
-			var isClickInside = specifiedElement.contains(event.target);
-			menuToggle.forEach(mtoggle => {
-				mtoggleTemp = mtoggle
-				mt = mtoggle.contains(event.target);
-			})
-
-			if (!isClickInside && !mt) {
-				if ( document.body.classList.contains('offcanvas-menu') ) {
-					document.body.classList.remove('offcanvas-menu');
-					mtoggleTemp.classList.remove('active');
-				}
-			}
-
-		});
-
-	}; 
-	siteMenuClone();
-
-
-})()
+  if (scrollY >= sectionTop - 50) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
