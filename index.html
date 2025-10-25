@@ -121,7 +121,7 @@
 
             <div class="d-none d-xl-flex align-items-center gap-3">
               <button class="btn btn-outline-light btn-sm login">Log In</button>
-              <button class="btn btn-danger btn-sm">Advertise</button>
+              <button class="btn btn-outline-light btn-sm login">Advertise</button>
             </div>
           </div>
         </nav>
@@ -208,7 +208,7 @@
             <h1 class="heading" data-aos="fade-up">
               Discover your place in Egypt’s real estate future.
             </h1>
-            <!-- <form
+            <form
               action="#"
               class="narrow-w form-search d-flex align-items-stretch mb-3"
               data-aos="fade-up"
@@ -219,122 +219,52 @@
                 class="form-control px-4"
                 placeholder="Your ZIP code or City. e.g. New Cairo"
               />
-              <button type="submit" class="btn btn-primary">Search</button>
-            </form> -->
-
-            <!-- Search Form -->
-            <div class="row justify-content-center">
-              <div class="col-12 col-lg-10">
-                <div class="search-card">
-                  <!-- Tabs -->
-                  <!-- <div class="search-tabs mb-4">
-                    <button class="search-tab" data-tab="lease">
-                      For Lease
-                    </button>
-                    <button class="search-tab" data-tab="sale">For Sale</button>
-                    <button class="search-tab" data-tab="auctions">
-                      Auctions
-                    </button>
-                    <button class="search-tab" data-tab="businesses">
-                      Businesses For Sale
-                    </button>
-                  </div> -->
-
-                  <!-- Property Types -->
-                  <!-- <div class="property-types mb-4">
-                    <div class="property-type-item">
-                      <div class="property-icon">
-                        <i class="fa-solid fa-building"></i>
-                      </div>
-                      <span class="property-label">Office</span>
-                    </div>
-                    <div class="property-type-item">
-                      <div class="property-icon">
-                        <i class="fa-solid fa-shop"></i>
-                      </div>
-                      <span class="property-label">Retail</span>
-                    </div>
-                    <div class="property-type-item">
-                      <div class="property-icon">
-                        <i class="fa-solid fa-gear"></i>
-                      </div>
-                      <span class="property-label">Industrial</span>
-                    </div>
-                    <div class="property-type-item">
-                      <div class="property-icon">
-                        <i class="fa-solid fa-earth-americas"></i>
-                      </div>
-                      <span class="property-label">Land</span>
-                    </div>
-                    <div class="property-type-item">
-                      <div class="property-icon">
-                        <i class="fa-solid fa-utensils"></i>
-                      </div>
-                      <span class="property-label">Restaurant</span>
-                    </div>
-                    <div class="property-type-item">
-                      <div class="property-icon">
-                        <i class="fa-solid fa-heart-pulse"></i>
-                      </div>
-                      <span class="property-label">Medical</span>
-                    </div>
-                  </div> -->
-
-                  <div class="d-flex mb-3">
-                    <select
-                      class="form-select me-4"
-                      aria-label="Default select example"
-                    >
-                      <option hidden>Property Type</option>
-                      <option value="Apartment">Apartment</option>
-                      <option value="Villa">Villa</option>
-                      <option value="DuplexDuplex">Duplex</option>
-                    </select>
-                    <select
-                      class="form-select me-3"
-                      aria-label="Default select example"
-                    >
-                      <option hidden>Bathrooms</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                    <select
-                      class="form-select"
-                      aria-label="Default select example"
-                    >
-                      <option hidden>Price Range</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-
-                  <!-- Search Input -->
-                  <div class="search-input-container">
-                    <input
-                      type="text"
-                      class="search-input"
-                      placeholder="Enter a location"
-                    />
-                    <button class="search-button button" type="button">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+              <button type="submit" class="btn button text-white py-3 px-4">Search</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
 
     <div id="section2" class="section">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 mx-auto text-center">
+          <h2 class="mb-4">Ensure your representative is an Official Agent by checking their phone number below.</h2>
+            <!-- Button to Open the Modal -->
+            <button type="button" class="btn button text-white py-3 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Verify your Sales Agent
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- /.col-lg-7 -->
+      </div>
+      <!-- /.row -->
+    </div>
+
+    <div id="section3" class="section">
       <div class="container">
         <div class="row mb-5 align-items-center">
           <div class="col-lg-6">
             <h2 class="font-weight-bold main-Text heading"><!-- لازم يتحول ل header text -->
-Explore New Projects            </h2>
+            Explore New Projects
+            </h2>
           </div>
           <!-- <div class="col-lg-6 text-lg-end">
             <p>
@@ -983,6 +913,7 @@ Explore New Projects            </h2>
       </div>
     </div>
 
+    <!-- section verify agent phone number -->
     <div class="section">
       <div class="row justify-content-center footer-cta" data-aos="fade-up">
         <div class="col-lg-7 mx-auto text-center">
@@ -991,7 +922,7 @@ Explore New Projects            </h2>
             <a
               href="#"
               target="_blank"
-              class="btn btn-primary text-white py-3 px-4"
+              class="btn button text-white py-3 px-4"
               >Apply for Real Estate agent</a
             >
           </p>

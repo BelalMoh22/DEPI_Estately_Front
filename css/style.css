@@ -5848,7 +5848,7 @@ textarea.form-control.is-invalid {
   word-wrap: break-word;
 }
 
-.modal {
+/* .modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -5944,7 +5944,7 @@ textarea.form-control.is-invalid {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1050;
+  z-index: 0;
   width: 100vw;
   height: 100vh;
   background-color: #000;
@@ -6209,7 +6209,7 @@ textarea.form-control.is-invalid {
   .modal-fullscreen-xxl-down .modal-footer {
     border-radius: 0;
   }
-}
+} */
 
 .tooltip {
   position: absolute;
@@ -13739,3 +13739,8 @@ nav[aria-label="breadcrumb"] li:before {
 }
 
 /* ///////////////////////////////////////////////////////////////// */
+
+/* section3 */
+#section3 {
+  padding-top: 2rem;
+}
