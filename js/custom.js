@@ -120,40 +120,6 @@
 	}
 	tinySdlier();
 
-		// Disable scrolling when modal is open
-	var modalScrollDisable = function() {
-		var modal = document.getElementById('exampleModal');
-		var body = document.body;
-		var html = document.documentElement;
-		
-		if (modal) {
-			// When modal is shown
-			modal.addEventListener('show.bs.modal', function() {
-				body.style.overflow = 'hidden';
-				body.style.paddingRight = '0px';
-				html.style.overflow = 'hidden';
-			});
-			
-			// When modal is hidden
-			modal.addEventListener('hide.bs.modal', function() {
-				body.style.overflow = '';
-				body.style.paddingRight = '';
-				html.style.overflow = '';
-			});
-			
-			// Also handle when modal is fully shown
-			modal.addEventListener('shown.bs.modal', function() {
-				body.style.overflow = 'hidden';
-				html.style.overflow = 'hidden';
-			});
-			
-			// Also handle when modal is fully hidden
-			modal.addEventListener('hidden.bs.modal', function() {
-				body.style.overflow = '';
-				html.style.overflow = '';
-			});
-		}
-	}
-	modalScrollDisable();
+
 
 })()
