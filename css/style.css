@@ -12866,7 +12866,7 @@ textarea {
   height: 2px;
   left: 0;
   bottom: 0;
-  background-color: #111827;
+  background-color: #00204A;
 }
 
 .property-item .property-content .specs {
@@ -13370,7 +13370,7 @@ nav[aria-label="breadcrumb"] li:before {
   width: 100%;
   bottom: 0;
   height: 2px;
-  background-color: #005555;
+  background-color: #00204A;
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
@@ -13511,6 +13511,10 @@ nav[aria-label="breadcrumb"] li:before {
   background-color: #EEF0FF !important;
 }
 
+.header-Text {
+  color: #00204A !important;
+}
+
 .main-Text {
   color: #111827 !important;
 }
@@ -13531,6 +13535,7 @@ nav[aria-label="breadcrumb"] li:before {
 }
 
 /* ===================================================================================================== */
+
 /* Header Styling */
 .site-header {
   position: fixed;
@@ -13597,148 +13602,20 @@ nav[aria-label="breadcrumb"] li:before {
   transition: 0.5s !important;
 }
 
-/* ============================================================================================ */
-/* Search Card */
-.search-card {
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 16px;
-  padding: 2rem;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
+/* ===================================================================================================== */
+
+/* section2 */
+.verify-icon i {
+  font-size: 45px;
+  color: #015C9A;
 }
 
-/* Search Tabs */
-.search-tabs {
-  display: flex;
-  gap: 0;
-  border-radius: 8px;
-  overflow: hidden;
-  background: #f8f9fa;
-  padding: 4px;
+.verify-form .form-label {
+  display: block;
+  text-align: left;
 }
 
-.search-tab {
-  flex: 1;
-  padding: 12px 16px;
-  border: none;
-  background: transparent;
-  color: #6c757d;
-  font-weight: 500;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border-radius: 6px;
-}
-
-.search-tab.active {
-  background: var(--primary-color);
-  color: white;
-  box-shadow: 0 2px 4px rgba(26, 54, 93, 0.3);
-}
-
-.search-tab:hover:not(.active) {
-  background: rgba(26, 54, 93, 0.1);
-  color: var(--primary-color);
-}
-
-/* Property Types */
-.property-types {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.property-type-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  padding: 0.5rem;
-  border-radius: 8px;
-  flex: 1;
-  min-width: 80px;
-}
-
-.property-type-item:hover {
-  background: rgba(37, 99, 235, 0.05);
-  transform: translateY(-2px);
-}
-
-.property-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: #f8f9fa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0.5rem;
-  transition: all 0.3s ease;
-}
-
-.property-icon i {
-  font-size: 1.5rem;
-  color: #6c757d;
-}
-
-.property-type-item:hover .property-icon {
-  background: var(--primary-color);
-  transform: scale(1.1);
-}
-
-.property-type-item:hover .property-icon i {
-  color: white;
-}
-
-.property-label {
-  font-size: 0.8rem;
-  color: #6c757d;
-  font-weight: 500;
-  text-align: center;
-}
-
-/* Search Input */
-.search-input-container {
-  display: flex;
-  gap: 0;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.search-input {
-  flex: 1;
-  padding: 16px 20px;
-  border: none;
-  font-size: 1rem;
-  background: white;
-  color: #2d3748;
-}
-
-.search-input:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(26, 54, 93, 0.1);
-}
-
-.search-input::placeholder {
-  color: #a0aec0;
-}
-
-.search-button {
-  padding: 16px 24px;
-  border-radius: 8px;
-  border: none;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* ///////////////////////////////////////////////////////////////// */
+/* ===================================================================================================== */
 
 /* section3 */
 #section3 {
