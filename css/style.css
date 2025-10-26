@@ -13564,7 +13564,6 @@ nav[aria-label="breadcrumb"] li:before {
 
 .site-header li a:not(.active) {
   font-size: 16px !important;
-  /* color: #495057 !important; */
 }
 
 .site-header .nav-link.active {
