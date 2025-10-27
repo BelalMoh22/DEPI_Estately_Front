@@ -63,7 +63,7 @@ window.addEventListener("scroll", function () {
   const sectionTop = secondSection.offsetTop;
   const scrollY = window.scrollY;
 
-  if (scrollY >= sectionTop - 50) {
+  if (scrollY >= sectionTop) {
     header.classList.add("scrolled");
   } else {
     header.classList.remove("scrolled");
