@@ -1124,59 +1124,51 @@ nav[aria-label="breadcrumb"] li:before {
   color: white !important;
 }
 
-.site-header.scrolled .nav-link.active {
+.site-header.scrolled .nav-link.active,
+.offcanvas .nav-link.active {
   font-size: 16px !important;
   color: #015C9A !important;
 }
 
-.site-header.scrolled li a:not(.active) {
+.site-header.scrolled li a:not(.active),
+.offcanvas li a:not(.active) {
   font-size: 16px !important;
   color: #495057 !important;
 }
 
-.site-header li>a:hover:not(.dropdown-item) {
+.site-header li>a:hover {
   color: white !important;
 }
 
-.site-header.scrolled li>a:hover:not(.dropdown-item) {
+.site-header.scrolled li>a:hover,
+.offcanvas li>a:hover {
   color: #015C9A !important;
 }
 
-.site-header.scrolled .login {
+.site-header.scrolled .login,
+.offcanvas .login {
   background-color: #015C9A !important;
   color: #F9FAFB !important;
   transition: 0.5s !important;
 }
 
-.site-header.scrolled .login:hover {
+.site-header.scrolled .login:hover,
+.offcanvas .login:hover {
   background-color: #017DD0 !important;
   color: #F9FAFB !important;
   transition: 0.5s !important;
 }
 
-/* Fix dropdown in offcanvas */
-.offcanvas .dropdown-menu {
-  position: static !important;
-  transform: none !important;
-  border: none;
-  box-shadow: none;
-  background-color: transparent;
-  padding-left: 1rem;
+.offcanvas {
+  width: 250px !important;
 }
 
-.offcanvas .dropdown-item {
-  padding: 0.5rem 1rem;
-  color: rgba(255, 255, 255, 0.75);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.offcanvas .dropdown-item:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: white;
-}
-
-.offcanvas .dropdown-item:last-child {
-  border-bottom: none;
+.offcanvas .line,
+.line{
+  width: 100%;
+  height: 1px;
+  background-color: #cac9c9;
+  margin: 5px 0;
 }
 
 /* =========================================================================================================== */
@@ -2067,6 +2059,10 @@ nav[aria-label="breadcrumb"] li:before {
   }
 }
 
+.desktop-search ::placeholder {
+  color: rgba(255, 255, 255, 0.796) !important;
+}
+
 /* Style for select box options - gradient from white to #495057 */
 select option {
   background-color: white;
@@ -2131,6 +2127,7 @@ select option:nth-child(13) {
 select option:nth-child(14) {
   background-color: #989ba6;
 }
+
 select option:nth-child(15) {
   background-color: #90939f;
 }
@@ -2182,9 +2179,11 @@ select option:nth-child(n+24) {
   display: block;
   text-align: left;
 }
+
 /* ===================================================================================================== */
 /* section- Explore Projects */
 #section3 {
   padding-top: 2rem;
 }
+
 /* ============================================================================================= */

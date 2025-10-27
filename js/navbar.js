@@ -49,9 +49,39 @@ function initMobileMenu() {
   }
 }
 
+// Function to set active navigation link based on current page
+function setActiveNavLink() {
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+  // Get all nav links in desktop menu
+  const desktopNavLinks = document.querySelectorAll(
+    ".navbar .navbar-nav .nav-link"
+  );
+
+  // Get all nav links in mobile menu
+  const mobileNavLinks = document.querySelectorAll(
+    ".offcanvas .navbar-nav .nav-link"
+  );
+
+  // Combine both desktop and mobile nav links
+  const allNavLinks = [...desktopNavLinks, ...mobileNavLinks];
+
+  allNavLinks.forEach((link) => {
+    const linkHref = link.getAttribute("href");
+
+    // Check if the link matches the current page
+    if (linkHref === currentPage) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   initSearch();
   initMobileMenu();
+  setActiveNavLink();
 });
 
 window.addEventListener("scroll", function () {
@@ -63,7 +93,7 @@ window.addEventListener("scroll", function () {
   const sectionTop = secondSection.offsetTop;
   const scrollY = window.scrollY;
 
-  if (scrollY >= sectionTop) {
+  if (scrollY >= sectionTop - 50) {
     header.classList.add("scrolled");
   } else {
     header.classList.remove("scrolled");

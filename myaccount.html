@@ -38,7 +38,8 @@
     <link rel="stylesheet" href="css/tiny-slider.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Estately | Real Estate in Egypt</title>
+
+    <title>Estately | My Account</title>
   </head>
   <body class="main-Background">
     <!-- Header -->
@@ -165,7 +166,7 @@
       <div class="container">
         <div class="row justify-content-center align-items-center">
           <div class="col-lg-9 text-center mt-5">
-            <h1 class="heading" data-aos="fade-up">Contact Us</h1>
+            <h1 class="heading" data-aos="fade-up">My Account</h1>
 
             <nav
               aria-label="breadcrumb"
@@ -178,7 +179,7 @@
                   class="breadcrumb-item active text-white-50"
                   aria-current="page"
                 >
-                  Contact
+                  My Account
                 </li>
               </ol>
             </nav>
@@ -190,92 +191,152 @@
     <div id="section2" class="section">
       <div class="container">
         <div class="row">
-          <div
-            class="col-lg-4 mb-5 mb-lg-0"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="contact-info">
-              <div class="address mt-2">
-                <i class="icon-room"></i>
-                <h4 class="mb-2">Location:</h4>
-                <p>
-                  43 Raymouth Rd. Baltemoer,<br />
-                  London 3910
-                </p>
-              </div>
-
-              <div class="open-hours mt-4">
-                <i class="icon-clock-o"></i>
-                <h4 class="mb-2">Open Hours:</h4>
-                <p>
-                  Sunday-Friday:<br />
-                  11:00 AM - 2300 PM
-                </p>
-              </div>
-
-              <div class="email mt-4">
-                <i class="icon-envelope"></i>
-                <h4 class="mb-2">Email:</h4>
-                <p>info@Untree.co</p>
-              </div>
-
-              <div class="phone mt-4">
-                <i class="icon-phone"></i>
-                <h4 class="mb-2">Call:</h4>
-                <p>+1 1234 55488 55</p>
-              </div>
+          <div class="col-lg-3 mb-5">
+            <div class="sidebar">
+              <h3 class="mb-4">My Account</h3>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="#" class="active d-block p-3 rounded">Profile</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="d-block p-3 rounded text-black-50"
+                    >My Properties</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    href="favorites.html"
+                    class="d-block p-3 rounded text-black-50"
+                    >Favorites</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="d-block p-3 rounded text-black-50"
+                    >Messages</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="d-block p-3 rounded text-black-50"
+                    >Settings</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="d-block p-3 rounded text-black-50"
+                    >Logout</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <form action="#">
-              <div class="row">
-                <div class="col-6 mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Your Name"
-                  />
-                </div>
-                <div class="col-6 mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Your Email"
-                  />
-                </div>
-                <div class="col-12 mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Subject"
-                  />
-                </div>
-                <div class="col-12 mb-3">
-                  <textarea
-                    name=""
-                    id=""
-                    cols="30"
-                    rows="7"
-                    class="form-control"
-                    placeholder="Message"
-                  ></textarea>
-                </div>
+          <div class="col-lg-9">
+            <div class="account-content">
+              <h2 class="mb-4 heading header-Text">Profile Information</h2>
 
-                <div class="col-12">
-                  <input
-                    type="submit"
-                    value="Send Message"
-                    class="btn button"
-                  />
+              <div class="row mb-5">
+                <div class="col-md-4 text-center">
+                  <div class="profile-avatar mb-3">
+                    <img
+                      src="images/person_1-min.jpg"
+                      alt="Profile"
+                      class="img-fluid rounded-circle"
+                      style="width: 150px; height: 150px; object-fit: cover"
+                    />
+                  </div>
+                  <button class="btn btn-outline-primary">Change Photo</button>
+                </div>
+                <div class="col-md-8">
+                  <form>
+                    <div class="row mb-3">
+                      <div class="col-md-6">
+                        <label for="firstName" class="form-label"
+                          >First Name</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="firstName"
+                          value="John"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="lastName" class="form-label"
+                          >Last Name</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="lastName"
+                          value="Doe"
+                        />
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        value="john.doe@example.com"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="phone" class="form-label">Phone</label>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="phone"
+                        value="+20 123 456 7890"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="address" class="form-label">Address</label>
+                      <textarea class="form-control" id="address" rows="2">
+123 Main Street, Cairo, Egypt</textarea
+                      >
+                    </div>
+                    <button type="submit" class="btn button text-white">
+                      Save Changes
+                    </button>
+                  </form>
                 </div>
               </div>
-            </form>
+
+              <div class="row mt-5">
+                <div class="col-12">
+                  <h3 class="mb-4 heading header-Text">Account Statistics</h3>
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <div class="card-body text-center">
+                          <h4 class="text-primary">24</h4>
+                          <p class="text-black-50">Saved Properties</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <div class="card-body text-center">
+                          <h4 class="text-primary">8</h4>
+                          <p class="text-black-50">Active Listings</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <div class="card-body text-center">
+                          <h4 class="text-primary">156</h4>
+                          <p class="text-black-50">Total Views</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- /.untree_co-section -->
 
     <div class="site-footer">
       <div class="container">
@@ -292,9 +353,7 @@
                 </li>
               </ul>
             </div>
-            <!-- /.widget -->
           </div>
-          <!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <div class="widget">
               <h3>Sources</h3>
@@ -315,9 +374,7 @@
                 <li><a href="#">Creative</a></li>
               </ul>
             </div>
-            <!-- /.widget -->
           </div>
-          <!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <div class="widget">
               <h3>Links</h3>
@@ -348,21 +405,11 @@
                 </li>
               </ul>
             </div>
-            <!-- /.widget -->
           </div>
-          <!-- /.col-lg-4 -->
         </div>
-        <!-- /.row -->
 
         <div class="row mt-5">
           <div class="col-12 text-center">
-            <!-- 
-              **==========
-              NOTE: 
-              Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
-              **==========
-            -->
-
             <p>
               Copyright &copy;
               <script>
@@ -370,7 +417,6 @@
               </script>
               . All Rights Reserved. &mdash; Designed with love by
               <a href="https://untree.co">Untree.co</a>
-              <!-- License information: https://untree.co/license/ -->
             </p>
             <div>
               Distributed by
@@ -379,9 +425,7 @@
           </div>
         </div>
       </div>
-      <!-- /.container -->
     </div>
-    <!-- /.site-footer -->
 
     <!-- Preloader -->
     <div id="overlayer"></div>
