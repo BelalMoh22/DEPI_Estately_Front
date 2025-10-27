@@ -1112,7 +1112,7 @@ nav[aria-label="breadcrumb"] li:before {
 }
 
 .site-header.scrolled .logo {
-  color: #015C9A !important;
+  color: #00204A !important;
 }
 
 .site-header li a:not(.active) {
@@ -1127,7 +1127,7 @@ nav[aria-label="breadcrumb"] li:before {
 .site-header.scrolled .nav-link.active,
 .offcanvas .nav-link.active {
   font-size: 16px !important;
-  color: #015C9A !important;
+  color: #00204A !important;
 }
 
 .site-header.scrolled li a:not(.active),
@@ -1164,7 +1164,7 @@ nav[aria-label="breadcrumb"] li:before {
 }
 
 .offcanvas .line,
-.line{
+.line {
   width: 100%;
   height: 1px;
   background-color: #cac9c9;

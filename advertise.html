@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Untree.co" />
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <meta name="description" content="Advertise your properties with Estately - Reach thousands of potential buyers and renters" />
+    <meta name="keywords" content="bootstrap, bootstrap5, real estate advertising" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Advertise With Us | Estately</title>
+  </head>
+  <body class="main-Background">
+    <!-- Header -->
+    <header class="first-section fixed-top site-header">
+      <nav class="navbar navbar-expand-lg navbar-dark py-3">
+        <div class="container-fluid">
+          <!-- Mobile menu button -->
+          <button
+            class="navbar-toggler d-lg-none toggle-button"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu"
+          >
+            <i class="toggle-icon fa-solid fa-bars"></i>
+          </button>
+
+          <!-- Logo -->
+          <a class="logo navbar-brand fw-bold fs-4" href="index.html"
+            >Estately</a
+          >
+
+          <div class="d-lg-flex d-none justify-content-center flex-grow-1">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="properties.html">Properties</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="favorites.html">Favorites</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="d-none d-lg-flex align-items-center gap-3">
+            <a href="#" class="btn btn-outline-light btn-sm login">Login</a>
+            <a href="advertise.html" class="btn btn-outline-light btn-sm login active">
+              Advertise
+            </a>
+          </div>
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+      <!-- /.navbar -->
+    </header>
+
+    <!-- Mobile Menu Offcanvas -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="mobileMenu"
+      aria-labelledby="mobileMenuLabel"
+      data-bs-auto-close="false"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <!-- /offcanvas-header -->
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="properties.html">Properties</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <span class="line"></span>
+          <li class="nav-item">
+            <a class="nav-link" href="favorites.html">Favorites</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="myaccount.html">My Account</a>
+          </li>
+          <span class="line"></span>
+        </ul>
+        <div class="mt-2">
+          <a href="#" class="btn btn-outline-light btn-sm login">Login</a>
+          <a href="advertise.html" class="btn btn-outline-light btn-sm login active">
+            Advertise
+          </a>
+        </div>
+      </div>
+      <!-- /offcanvas-body -->
+    </div>
+    <!-- /offcanvas -->
+    <!-- End Of Header -->
+
+    <div
+      class="hero page-inner overlay"
+      style="background-image: url('images/hero_bg_2.jpg')"
+    >
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-9 text-center mt-5">
+            <h1 class="heading" data-aos="fade-up">Advertise With Us</h1>
+
+            <nav
+              aria-label="breadcrumb"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <ol class="breadcrumb text-center justify-content-center">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li
+                  class="breadcrumb-item active text-white-50"
+                  aria-current="page"
+                >
+                  Advertise
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Advertising Benefits Section -->
+    <div id="section2" class="section">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col-lg-10 mx-auto">
+            <h2 class="font-weight-bold heading header-Text mb-4">Why Advertise With Estately?</h2>
+            <p class="lead secondary-Text">
+              Reach thousands of potential buyers and renters. Increase your property visibility and 
+              connect with the right audience quickly and effectively.
+            </p>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="text-center">
+              <div class="wrap-icon mb-3 mx-auto d-flex align-items-center justify-content-center"
+                   style="width: 100px; height: 100px; background: #EEF0FF; border-radius: 50%;">
+                <i class="bi bi-eye-fill" style="font-size: 40px; color: #015C9A;"></i>
+              </div>
+              <h4 class="heading header-Text mb-3">Maximum Visibility</h4>
+              <p class="text-black-50">
+                Get your properties seen by thousands of active searchers every day
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="text-center">
+              <div class="wrap-icon mb-3 mx-auto d-flex align-items-center justify-content-center"
+                   style="width: 100px; height: 100px; background: #EEF0FF; border-radius: 50%;">
+                <i class="bi bi-people-fill" style="font-size: 40px; color: #015C9A;"></i>
+              </div>
+              <h4 class="heading header-Text mb-3">Quality Leads</h4>
+              <p class="text-black-50">
+                Connect with genuine, ready-to-buy or rent customers
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="text-center">
+              <div class="wrap-icon mb-3 mx-auto d-flex align-items-center justify-content-center"
+                   style="width: 100px; height: 100px; background: #EEF0FF; border-radius: 50%;">
+                <i class="bi bi-clock-history" style="font-size: 40px; color: #015C9A;"></i>
+              </div>
+              <h4 class="heading header-Text mb-3">Fast Results</h4>
+              <p class="text-black-50">
+                Quick listing and instant exposure to your target market
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="text-center">
+              <div class="wrap-icon mb-3 mx-auto d-flex align-items-center justify-content-center"
+                   style="width: 100px; height: 100px; background: #EEF0FF; border-radius: 50%;">
+                <i class="bi bi-shield-check-fill" style="font-size: 40px; color: #015C9A;"></i>
+              </div>
+              <h4 class="heading header-Text mb-3">Secure Platform</h4>
+              <p class="text-black-50">
+                Verified agents and properties for a trustworthy experience
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing Plans Section -->
+    <div class="section bg-light">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col-lg-10 mx-auto">
+            <h2 class="font-weight-bold heading header-Text mb-4">Choose Your Plan</h2>
+            <p class="lead secondary-Text">
+              Flexible advertising packages designed to fit your needs and budget
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-card bg-white p-5 h-100" style="border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+              <h3 class="heading header-Text mb-3">Basic</h3>
+              <div class="mb-4">
+                <span class="display-4 header-Text">$99</span>
+                <span class="secondary-Text">/month</span>
+              </div>
+              <ul class="list-unstyled text-start mb-4">
+                <li class="mb-2"><i class="bi bi-check-lg text-success me-2"></i>Up to 5 listings</li>
+                <li class="mb-2"><i class="bi bi-check-lg text-success me-2"></i>Standard visibility</li>
+                <li class="mb-2"><i class="bi bi-check-lg text-success me-2"></i>Email support</li>
+                <li class="mb-2"><i class="bi bi-check-lg text-success me-2"></i>Basic analytics</li>
+              </ul>
+              <button class="btn btn-outline-primary w-100">Get Started</button>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-card bg-white p-5 h-100 position-relative" 
+                 style="border-radius: 12px; box-shadow: 0 5px 20px rgba(1, 92, 154, 0.3); border: 2px solid #015C9A;">
+              <span class="badge bg-primary position-absolute top-0 end-0 m-3">Popular</span>
+              <h3 class="heading header-Text mb-3">Professional</h3>
+              <div class="mb-4">
+                <span class="display-4 header-Text">$199</span>
+                <span class="secondary-Text">/month</span>
+              </div>
+              <ul class="list-unstyled text-start mb-4">
+                <li class="mb-2"><i class="bi bi-check-lg text-success me-2"></i>Up to 20 listings</li>
+                <li class="mb-2"><i class="bi bi-check-lg text-success me-2"></i>Featured placement</li>
+                <li class="mb-2"><i class="bi bi-check-lg text-success me-2"></i>Priority support</li>
+                <li class="mb-2"><i class="bi bi-check-lg text-success me-2"></i>Advanced analytics</li>
+                <li class="mb-2"><i class="bi bi-check-lg text-success me-2"></i>Social media promotion</li>
+              </ul>
+              <button class="btn button w-100">Get Started</button>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="pricing-card bg-white p-5 h-100" style="border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+              <h3 class="heading header-Text mb-3">Enterprise</h3>
+              <div class="mb-4">
+                <span class="display-4 header-Text">$499</span>
+                <span class="secondary-Text">/month</span>
+              </div>
+              <ul class="list-unstyled text-start mb-4">
+                <li class="mb-2"><i class="bi bi-check-lg text-success me-2"></i>Unlimited listings</li>
+                <li class="mb-2"><i class="bi bi-check-lg text-success me-2"></i>Top priority placement</li>
+                <li class="mb-2"><i class="bi bi-check-lg text-success me-2"></i>24/7 dedicated support</li>
+                <li class="mb-2"><i class="bi bi-check-lg text-success me-2"></i>Custom solutions</li>
+                <li class="mb-2"><i class="bi bi-check-lg text-success me-2"></i>Professional photoshoot</li>
+                <li class="mb-2"><i class="bi bi-check-lg text-success me-2"></i>Video tour creation</li>
+              </ul>
+              <button class="btn btn-outline-primary w-100">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="text-center mb-5">
+              <h2 class="font-weight-bold heading header-Text mb-4">Start Advertising Today</h2>
+              <p class="lead secondary-Text">
+                Fill out the form below and our team will get back to you within 24 hours
+              </p>
+            </div>
+
+            <form action="#" class="bg-white p-5" style="border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="name" class="form-label header-Text">Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="John Doe"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label header-Text">Email Address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="john@example.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="phone" class="form-label header-Text">Phone Number</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    placeholder="+20 123 456 7890"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="company" class="form-label header-Text">Company (Optional)</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="company"
+                    placeholder="Your Company"
+                  />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="plan" class="form-label header-Text">Select Plan</label>
+                <select class="form-select" id="plan" required>
+                  <option value="">Choose a plan...</option>
+                  <option value="basic">Basic - $99/month</option>
+                  <option value="professional">Professional - $199/month</option>
+                  <option value="enterprise">Enterprise - $499/month</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label header-Text">Tell us about your properties</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  placeholder="Describe your properties, location, and any special requirements..."
+                ></textarea>
+              </div>
+
+              <div class="mb-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="terms" required>
+                  <label class="form-check-label secondary-Text" for="terms">
+                    I agree to the <a href="#" class="header-Text">Terms and Conditions</a> and 
+                    <a href="#" class="header-Text">Privacy Policy</a>
+                  </label>
+                </div>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="btn button px-5 py-3">
+                  Submit Request
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Logo and slogan -->
+          <div class="col-md-4">
+            <div class="d-flex align-items-center mb-2">
+              <img
+                src="images/logo.png"
+                alt="Logo"
+                width="45"
+                height="40"
+                class="me-2"
+              />
+              <h5 class="fw-semibold mb-0 fs-3">Estately</h5>
+            </div>
+            <p class="text-muted ms-2" style="font-size: 16px;">Real Estate Agency</p>
+          </div>
+          <!-- Company -->
+          <div class="col-6 col-md-2">
+            <h6 class="fw-bold mb-3">Company</h6>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="properties.html">Properties</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+          <!-- Product -->
+          <div class="col-6 col-md-2">
+            <h6 class="fw-bold mb-3">Product</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Marketplace</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </div>
+          <!-- Areas -->
+          <div class="col-6 col-md-2">
+            <h6 class="fw-bold mb-3">Areas</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">New Cairo</a></li>
+              <li><a href="#">El Sheikh Zayed</a></li>
+              <li><a href="#">Al Alamein</a></li>
+              <li><a href="#">Ain Sokhna</a></li>
+              <li><a href="#">Ras El Hekma</a></li>
+              <li><a href="#">El Maadi</a></li>
+            </ul>
+          </div>
+          <!-- Resources -->
+          <div class="col-6 col-md-2">
+            <h6 class="fw-bold mb-3">Resources</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Sales</a></li>
+              <li><a href="advertise.html">Advertise</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+
+        <hr class="my-4" />
+
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+        >
+          <p class="mb-2 mb-md-0 text-muted">
+            Copyright &copy; 2025 Estately. All rights reserved.
+          </p>
+            <ul class="list-unstyled social">
+              <li>
+                <a href="#"><span class="icon-instagram"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-twitter"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-facebook"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-linkedin"></span></a>
+              </li>
+            </ul>
+          <div>
+            <a href="#" class="text-muted me-3">Terms and Conditions</a>
+            <a href="#" class="text-muted">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /.footer -->
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
+
