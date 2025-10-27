@@ -507,6 +507,7 @@ textarea {
 
 .feature-h .feature-text .heading {
   font-size: 18px;
+  color: #00204A;
 }
 
 .feature-h:hover .wrap-icon,
@@ -905,6 +906,7 @@ nav[aria-label="breadcrumb"] li:before {
   position: relative;
   display: inline-block;
   padding-bottom: 10px;
+  color: #00204A;
 }
 
 .learn-more:before {
