@@ -965,9 +965,9 @@ nav[aria-label="breadcrumb"] li:before {
 }
 
 .site-footer {
-  background: #efefef;
+  background-color: #efefef;
   font-size: 14px;
-  color: #888;
+  color: #00204A;
   padding: 70px 0;
 }
 
@@ -975,11 +975,11 @@ nav[aria-label="breadcrumb"] li:before {
   color: #777;
   position: relative;
   display: inline-block;
-  text-decoration: underline;
+  padding-bottom: 4px;
 }
 
 .site-footer a:hover {
-  color: #000;
+  color: #00204A;
   text-decoration: none;
 }
 
