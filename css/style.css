@@ -967,8 +967,9 @@ nav[aria-label="breadcrumb"] li:before {
 .site-footer {
   background-color: #efefef;
   font-size: 14px;
-  color: #00204A;
-  padding: 70px 0;
+  color: rgb(0, 33, 77);
+  /* padding: 70px 0; */
+  padding: 50px 0;
 }
 
 .site-footer a {
@@ -994,7 +995,6 @@ nav[aria-label="breadcrumb"] li:before {
 }
 
 .site-footer .widget {
-  margin-bottom: 40px;
   display: block;
 }
 
@@ -1003,7 +1003,6 @@ nav[aria-label="breadcrumb"] li:before {
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 15px;
   color: #00204a;
 }
 
@@ -1079,7 +1078,6 @@ nav[aria-label="breadcrumb"] li:before {
   color: #F9FAFB !important;
   transition: 0.5s !important;
 }
-
 /* ===================================================================================================== */
 /* Header Styling */
 .site-header {
@@ -1127,7 +1125,7 @@ nav[aria-label="breadcrumb"] li:before {
 .site-header.scrolled .nav-link.active,
 .offcanvas .nav-link.active {
   font-size: 16px !important;
-  color: #00204A !important;
+  color: #017DD0 !important;
 }
 
 .site-header.scrolled li a:not(.active),
@@ -1209,7 +1207,6 @@ nav[aria-label="breadcrumb"] li:before {
   background: rgba(255, 255, 255, 0.2);
   color: #015C9A;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(1, 92, 154, 0.5);
 }
 
 .search-tab:hover:not(.active) {
@@ -1260,7 +1257,7 @@ nav[aria-label="breadcrumb"] li:before {
 }
 
 .property-type-item:hover .property-icon {
-  background: var(--primary-color);
+  background: #015C9A;
   transform: scale(1.1);
 }
 
@@ -1562,7 +1559,7 @@ nav[aria-label="breadcrumb"] li:before {
 .reset-btn {
   background: none;
   border: none;
-  color: #0d6efd;
+  color :#015C9A ;
   font-size: 0.85rem;
   font-weight: 500;
   text-decoration: underline;
@@ -1611,14 +1608,14 @@ nav[aria-label="breadcrumb"] li:before {
 }
 
 .property-type-btn:hover {
-  border-color: #0d6efd;
-  color: #0d6efd;
+  border-color: #015C9A;
+  color: #015C9A;
 }
 
 .property-type-btn.selected {
-  background: #0d6efd;
+  background: #015C9A;
   color: white;
-  border-color: #0d6efd;
+  border-color: #015C9A;
 }
 
 .range-slider-container {
@@ -1642,7 +1639,7 @@ nav[aria-label="breadcrumb"] li:before {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #0d6efd;
+  background: #015C9A;
   cursor: pointer;
   border: 2px solid white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -1652,7 +1649,7 @@ nav[aria-label="breadcrumb"] li:before {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #0d6efd;
+  background: #015C9A;
   cursor: pointer;
   border: 2px solid white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -1710,14 +1707,14 @@ nav[aria-label="breadcrumb"] li:before {
 }
 
 .option-btn:hover {
-  border-color: #0d6efd;
-  color: #0d6efd;
+  border-color: #015C9A;
+  color: #015C9A;
 }
 
 .option-btn.selected {
-  background: #0d6efd;
+  background: #015C9A;
   color: white;
-  border-color: #0d6efd;
+  border-color: #015C9A;
 }
 
 .amenities-grid {
@@ -1739,14 +1736,14 @@ nav[aria-label="breadcrumb"] li:before {
 }
 
 .amenity-btn:hover {
-  border-color: #0d6efd;
-  color: #0d6efd;
+  border-color: #015C9A;
+  color: #015C9A;
 }
 
 .amenity-btn.selected {
-  background: #0d6efd;
+  background: #015C9A;
   color: white;
-  border-color: #0d6efd;
+  border-color: #015C9A;
 }
 
 /* Modal Footer */
@@ -1757,7 +1754,7 @@ nav[aria-label="breadcrumb"] li:before {
 }
 
 .search-filter .modal-footer .search-btn {
-  background: #0d6efd;
+  background: #015C9A;
   border: none;
   padding: 0.75rem 2rem;
   border-radius: 8px;
@@ -1766,7 +1763,7 @@ nav[aria-label="breadcrumb"] li:before {
 }
 
 .search-filter .modal-footer .search-btn:hover {
-  background: #0b5ed7;
+  background: #015C9A;
 }
 
 /* Responsive adjustments */
@@ -2167,7 +2164,6 @@ select option:nth-child(23) {
 select option:nth-child(n+24) {
   background-color: #495057;
 }
-
 /* ===================================================================================================== */
 /* section-verifying  */
 .verify-icon i {
