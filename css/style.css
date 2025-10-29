@@ -708,7 +708,7 @@ textarea {
 
 #property-nav span:hover,
 #property-nav span.active {
-  background: #00204a;
+  background: #00204a !important;
   color: #fff !important;
 }
 
@@ -965,6 +965,7 @@ nav[aria-label="breadcrumb"] li:before {
 }
 
 .site-footer {
+  
   background-color: #efefef;
   font-size: 14px;
   color: rgb(0, 33, 77);
@@ -2188,8 +2189,13 @@ select option:nth-child(n+24) {
 }
 
 /* ============================================================================================= */
-
 /* footer */
 .logo-paragraph {
   font-size: 16px;
+}
+/* ============================================================================================= */
+/* Account page */
+.change-photo:hover {
+  background-color: #015C9A;
+  color: white;
 }
