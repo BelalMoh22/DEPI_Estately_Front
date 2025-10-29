@@ -1078,6 +1078,11 @@ nav[aria-label="breadcrumb"] li:before {
   color: #F9FAFB !important;
   transition: 0.5s !important;
 }
+
+.blog-Title {
+  color: #015C9A !important;
+}
+
 /* ===================================================================================================== */
 /* Header Styling */
 .site-header {
